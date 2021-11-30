@@ -16,15 +16,16 @@ public class MoodAnalyzer {
 		this.message = message;
 	}
 
-	public String readMessage() {
-		try {
-			if (message.toLowerCase().contains("sad")) {
-				return "SAD";
-			} else {
-				return "HAPPY";
-			}
-		} catch (NullPointerException e) {
-			return "Exception Handled";
-		}
-	}
+	 public String readMessage() throws MoodAnalysisException {
+	        try {
+	            if (message.length() == 0)
+	                throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_EMPTY , "Please enter proper message!");
+	            if (message.toLowerCase().contains("sad"))
+	                return "SAD";
+	            else
+	                return "HAPPY";
+	        } catch(NullPointerException e) {
+	            throw new MoodAnalysisException(MoodAnalysisException.ExceptionType.ENTERED_NULL , "Please enter proper message!");
+	        }
+	    }
 }

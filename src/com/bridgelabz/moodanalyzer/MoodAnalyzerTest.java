@@ -15,6 +15,7 @@ public class MoodAnalyzerTest {
 	}
 	
 	@Test
+
 	public void givenMessage_WhenSad_ShouldReturnSad() {
 		moodAnalyzer.setMessage("Iam in Sad Mood");
 		String result = moodAnalyzer.readMessage();
@@ -22,3 +23,4 @@ public class MoodAnalyzerTest {
 		System.out.println("Iam in Sad Mood");
 	}
 }
+

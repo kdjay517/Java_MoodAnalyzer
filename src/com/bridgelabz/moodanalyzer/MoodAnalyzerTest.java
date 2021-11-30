@@ -15,8 +15,10 @@ public class MoodAnalyzerTest {
 	}
 	
 	@Test
+
 	public void givenMessage_WhenSad_ShouldReturnSad() {
-		String result = moodAnalyzer.readMessage("Iam in Happy Mood");
+		moodAnalyzer.setMessage("Iam in Happy Mood");
+		String result = moodAnalyzer.readMessage();
 		Assert.assertEquals("HAPPY",result);
 		System.out.println("Iam in Happy Mood");
 	}

@@ -1,4 +1,4 @@
-package test.com.bridgelabz.moodanalyzer;
+package com.bridgelabz.moodanalyzer;
 
 public class MoodAnalyzer {
 	

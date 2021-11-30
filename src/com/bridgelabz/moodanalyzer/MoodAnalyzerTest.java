@@ -38,3 +38,4 @@ public class MoodAnalyzerTest {
 		System.out.println("Message should not be Empty");
 	}
 }
+

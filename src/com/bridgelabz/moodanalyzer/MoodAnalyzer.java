@@ -17,11 +17,11 @@ public class MoodAnalyzer {
 	}
 
 	public String readMessage() {
-		if (message.toLowerCase().contains("happy")) {
-			return "HAPPY";
-		}else if (message.toLowerCase().contains("sad")) {
+		if (message.toLowerCase().contains("sad")) {
 			return "SAD";
 		}
 			return null;	
 	}
 }
+
+

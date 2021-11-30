@@ -16,10 +16,11 @@ public class MoodAnalyzerTest {
 	
 	@Test
 
-	public void givenMessage_WhenSad_ShouldReturnSad() {
+	public void givenMessage_WhenHappy_ShouldReturnHappy() {
 		moodAnalyzer.setMessage("Iam in Happy Mood");
 		String result = moodAnalyzer.readMessage();
 		Assert.assertEquals("HAPPY",result);
 		System.out.println("Iam in Happy Mood");
 	}
 }
+

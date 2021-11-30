@@ -15,7 +15,6 @@ public class MoodAnalyzer {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-
 	 public String readMessage() throws MoodAnalysisException {
 	        try {
 	            if (message.length() == 0)
@@ -29,3 +28,4 @@ public class MoodAnalyzer {
 	        }
 	    }
 }
+
